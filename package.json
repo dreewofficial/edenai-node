@@ -1,0 +1,51 @@
+{
+  "name": "edenai-node",
+  "version": "1.1.1",
+  "description": "A Node.js module for seamless interaction with Eden AI's API, enabling easy GET requests for various functionalities.",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "commonjs",
+  "keywords": [
+    "eden-ai",
+    "eden-api",
+    "node",
+    "edenai",
+    "eden-node",
+    "typescript",
+    "javascript",
+    "node.js"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "build": "npm run test && node scripts/build.mjs",
+    "start": "node test/index.js",
+    "test": "tsc"
+  },
+  "files": [
+    "dist",
+    "dist/types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriantandara/edenai-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adriantandara/edenai-node/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@adriantandara:registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/adriantandara/edenai-node#readme",
+  "author": "Adrian_",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.19.5",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "edenai-node": "^1.1.5"
+  }
+}
